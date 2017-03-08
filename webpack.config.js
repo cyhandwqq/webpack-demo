@@ -2,11 +2,11 @@ var webpack = require("webpack");
 module.exports = {
 	// devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
 	entry:  {
-		index: __dirname + "/public/js/main.js",
-		index2: __dirname + "/public/js/index2.js",
+		index1: __dirname + "/src/public/js/index1.js",
+		index2: __dirname + "/src/public/js/index2.js",
 	},
 	output: {
-		path: __dirname + "/web",//打包后的文件存放的地方
+		path: __dirname + "/src/public/online",//打包后的文件存放的地方
 		filename: "[name].entry.js",//打包后输出文件的文件名
 		chunkFilename: "[id].entry.js"
 	},
